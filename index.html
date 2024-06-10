@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather app</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+  <header>
+    <h1><a href="index.html" style="text-decoration: none; color: white;">weather app</a></h1>
+  </header>
+  <div class="center-box">
+    <div class="main-container">
+
+      <form class="weather-form">
+        <label for="f" class="main-font">지역을 입력하세요</label>
+        <input type="text" placeholder="eg: london" id="f" required class="main-font">
+        <button type="submit" class="main-font">search</button>
+      </form>
+  
+      <div class="weather-container show-weather">
+        <div class="s1">
+          <p class="city"></p>
+          <p class="description"></p>
+          <p class="temperature"></p>
+          <p class="feel-temperature"></p>
+          <p class="humidity"></p>
+          <p class="wind"></p>
+        </div>
+  
+        <div class="s2">
+          <img class="weather-icon">
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+<script src="./index.js"></script>
+</body>
+</html>

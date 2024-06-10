@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  },  
+  "scripts": {
+    "predeploy": "echo 'No build step'",
+    "deploy": "gh-pages -d ."
+  },
+  "homepage": "https://devhyungjun.github.io/weather-app"
+}

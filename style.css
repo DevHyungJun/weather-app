@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  height: 100vh;
+  background-image: url('./BG-img.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+header {
+  height: 12vh;
+  background-color: skyblue;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+header h1 {
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.24) 3px 5px 10px;
+  font-size: 5rem;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.center-box {
+  display: grid;
+  justify-items: center;
+}
+
+.main-container {
+  display: grid;
+  padding: 1rem;
+}
+
+.weather-form {
+  display: grid;
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.weather-form label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+.weather-form input {
+  height: 2rem;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.3rem;
+  border-radius: 6px;
+  border: lightgray 0.5px solid;
+  outline: none;
+}
+
+.weather-form button {
+  font-size: 1.5rem;
+  padding: 7px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(104, 175, 202);
+  color: rgb(91, 91, 91);
+  font-weight: 600;
+}
+.weather-form button:hover {
+  background-color: rgb(184, 233, 252);
+}
+
+.weather-container {
+  display: flex;
+  padding: 2rem;
+  border-radius: 6px;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: rgba(0, 0, 0, 0.24) 3px 5px 10px;
+  opacity: 0.8;
+}
+
+.s2, .s1 {
+  flex-grow: 1;
+}
+
+.weather-icon {
+  width: 8rem;
+}
+
+.city {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.show-weather {
+  background-color: skyblue;
+  color: rgb(91, 91, 91);
+  line-height: 3rem;
+}
+
+.error {
+  background-color: rgb(240, 98, 98);
+  color: rgb(241, 205, 205);
+}
+
+.main-font {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100vw;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .weather-form input {
+    width: 100%;
+  }
+
+  .weather-container {
+    padding: 10px 0px 10px 0px;
+  }
+
+  .main-container {
+    padding: 1rem;
+  }
+  
+  .show-weather {
+    line-height: 2rem;  
+  }
+
+  .s1 {
+    margin-left: 5px;
+  }
+}
